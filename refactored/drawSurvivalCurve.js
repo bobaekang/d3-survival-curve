@@ -78,7 +78,6 @@ function drawSurvivalCurve(data) {
       .attr("r", 1.5)
       .attr("stroke", colors(i))
       .attr("stroke-width", 2)
-
       .attr("fill", "none")
       .attr("transform", "translate(" + 0 + "," + m + ")");
 
