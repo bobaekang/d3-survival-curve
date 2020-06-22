@@ -20,8 +20,8 @@ function drawSurvivalCurve(data) {
   const m = 40;
 
   // set max to larger of 0 and maximum patient time
-  const maxTime = data.flatMap((ps) => ps.flatMap((p) => parseFloat(p.time)));
-  const max = Math.max(0, ...maxTime);
+  const pTimes = data.flatMap((ps) => ps.flatMap((p) => parseFloat(p.time)));
+  const max = Math.max(0, ...pTimes);
 
   // Remove previous svg
   d3.select(".km_svg").remove();
